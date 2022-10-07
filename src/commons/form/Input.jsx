@@ -1,37 +1,45 @@
 import React from "react";
 import Label from "./label";
 
-const Input = (
-  labelFor,
-  type,
-  style,
-  label,
-  placeholder,
-  value,
-  loading,
-  disabled,
-  required,
-  name,
-  id
-) => {
-  return (
-    <>
-      <Label htmlFor={labelFor} required={required} />
+const Input = ({
+    labelFor,
+    type,
+    style,
+    label,
+    placeholder,
+    value,
+    disabled,
+    required,
+    name,
+    id,
+}) => {
+    return (
+        <>
+            <div className="form-group">
+                {labelFor && (
+                    <Label
+                        for={name}
+                        inputName={labelFor}
+                        required={required}
+                    />
+                )}
 
-      <input
-        type={type}
-        aria-label={label}
-        placeholder={placeholder}
-        style={style}
-        value={value}
-        loading={loading}
-        disabled={disabled}
-        required={required}
-        name={name}
-        id={id}
-      />
-    </>
-  );
+                <div className="mt-1">
+                    <input
+                        type={type}
+                        aria-label={label}
+                        placeholder={placeholder}
+                        className={"form-control" + style}
+                        value={value}
+                        disabled={disabled}
+                        required={required}
+                        name={name}
+                        id={id}
+                    />
+                </div>
+            </div>
+        </>
+    );
 };
 
 export default Input;
