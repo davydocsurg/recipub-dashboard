@@ -47,7 +47,7 @@ const Login = () => {
             type={"submit"}
             text={"Login"}
             loading={false}
-            style={"btn btn-primary btn-lg px-5 "}
+            style={"btn btn-primary px-5"}
             disabled={false}
           />
         </div>
