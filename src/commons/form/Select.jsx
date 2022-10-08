@@ -1,10 +1,10 @@
 import React from "react";
+import FieldError from "./FieldError";
 import Label from "./label";
 
 const SelectInput = ({
     htmlFor,
     inputName,
-    value,
     required,
     name,
     error,
@@ -45,6 +45,7 @@ const SelectInput = ({
                         ))}
                     </select>
                 </div>
+                {error && <FieldError>{error}</FieldError>}
             </div>
         </>
     );

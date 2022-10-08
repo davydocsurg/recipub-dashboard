@@ -1,5 +1,6 @@
 import React from "react";
 import Label from "./label";
+import FieldError from "./FieldError";
 
 const Input = ({
     labelFor,
@@ -12,6 +13,7 @@ const Input = ({
     required,
     name,
     id,
+    error,
 }) => {
     return (
         <>
@@ -37,6 +39,7 @@ const Input = ({
                         id={id}
                     />
                 </div>
+                {error && <FieldError>{error}</FieldError>}
             </div>
         </>
     );

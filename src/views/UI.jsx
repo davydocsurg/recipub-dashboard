@@ -24,6 +24,7 @@ const UI = () => {
                                 placeholder="Name"
                                 name="name"
                                 required={required}
+                                error={"This field is required"}
                             />
                         </div>
                     </div>
@@ -43,6 +44,7 @@ const UI = () => {
                                 options={options}
                                 setOptions={setOptions}
                                 required={required}
+                                error={"Gender is required"}
                             />
                         </div>
                     </div>
