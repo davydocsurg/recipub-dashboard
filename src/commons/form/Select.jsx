@@ -1,9 +1,10 @@
 import React from "react";
 import FieldError from "./FieldError";
-import Label from "./label";
+import Label from "./Label";
 
 const SelectInput = ({
   htmlFor,
+  inputName,
   required,
   name,
   error,

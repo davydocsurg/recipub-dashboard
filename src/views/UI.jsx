@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import Button from "../commons/form/Button";
 import Input from "../commons/form/Input";
 import SelectInput from "../commons/form/Select";
+import TextArea from "../commons/form/TextArea";
 import Login from "../components/superAdmin/auth/Login";
+
 
 const UI = () => {
   const required = true;
@@ -54,9 +56,21 @@ const UI = () => {
             </div>
           </div>
 
-          <Login />
-        </div>
-      </div>
+          <div className="col-lg-4 col-md-6 col-sm-12">
+            <div className="card card-body">
+              <TextArea
+                labelFor=""
+                type=""
+                placeholder="Default Parameter"
+                style=""
+                value=""
+                name=""
+                id=""
+                disabled={false}
+                required={true}
+              />
+            </div>
+          </div>
     </>
   );
 };
