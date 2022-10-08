@@ -6,14 +6,15 @@ const Input = ({
     labelFor,
     type,
     style,
+    value,
     label,
     placeholder,
-    value,
     disabled,
     required,
     name,
     id,
     error,
+    handleChange,
 }) => {
     return (
         <>
@@ -36,6 +37,8 @@ const Input = ({
                         required={required}
                         name={name}
                         id={id}
+                        value={value}
+                        onChange={handleChange}
                     />
                 </div>
                 {error && <FieldError>{error}</FieldError>}
