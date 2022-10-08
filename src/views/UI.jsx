@@ -37,10 +37,12 @@ const UI = () => {
                     <div className="col-lg-4 col-md-6 col-sm-12">
                         <div className="card card-body">
                             <SelectInput
-                                labelFor={"Gender"}
+                                id="Gender"
+                                labelFor="Gender"
                                 name="gender"
                                 options={options}
                                 setOptions={setOptions}
+                                required={required}
                             />
                         </div>
                     </div>

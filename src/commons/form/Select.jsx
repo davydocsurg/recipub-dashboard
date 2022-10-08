@@ -26,7 +26,7 @@ const SelectInput = ({
                 {labelFor && (
                     <Label
                         htmlFor={htmlFor}
-                        inputName={inputName}
+                        inputName={labelFor}
                         required={required}
                     />
                 )}
