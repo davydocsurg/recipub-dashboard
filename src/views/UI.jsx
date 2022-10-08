@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../commons/form/Button";
 import Input from "../commons/form/Input";
 import SelectInput from "../commons/form/Select";
 
 const UI = () => {
     const required = true;
-    const genderOpts = [
+    const [options, setOptions] = useState([
         { option: "male", value: "male" },
         { option: "female", value: "female" },
         { option: "other", value: "other" },
-    ];
+    ]);
     return (
         <>
             <div className="container">
@@ -39,8 +39,8 @@ const UI = () => {
                             <SelectInput
                                 labelFor={"Gender"}
                                 name="gender"
-                                options={genderOpts}
-                                value
+                                options={options}
+                                setOptions={setOptions}
                             />
                         </div>
                     </div>

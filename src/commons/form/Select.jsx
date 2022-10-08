@@ -11,9 +11,13 @@ const SelectInput = ({
     style,
     options,
     labelFor,
+    setOptions,
 }) => {
-    const selected = (value) => {
-        return this.value === value;
+    const updateValue = (e) => {
+        setOptions({
+            ...options,
+            options: e.target.value,
+        });
     };
 
     return (
@@ -29,17 +33,13 @@ const SelectInput = ({
 
                 <div className="mt-1">
                     <select
-                        value={value}
                         required={required}
                         name={name}
                         error={error}
                         className={style}
                     >
-                        {options.map((opt) => (
-                            <option
-                                value={opt.value}
-                                selected={selected(opt.value)}
-                            >
+                        {options.map((opt, i) => (
+                            <option key={i} onChange={updateValue}>
                                 {opt.option}
                             </option>
                         ))}
