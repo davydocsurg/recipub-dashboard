@@ -3,6 +3,8 @@ import Button from "../commons/form/Button";
 import Input from "../commons/form/Input";
 import SelectInput from "../commons/form/Select";
 import TextArea from "../commons/form/TextArea";
+import Login from "../components/superAdmin/auth/Login";
+
 
 const UI = () => {
   const required = true;
@@ -11,6 +13,7 @@ const UI = () => {
     { option: "female", value: "female" },
     { option: "other", value: "other" },
   ]);
+
   return (
     <>
       <div className="container">
@@ -68,8 +71,6 @@ const UI = () => {
               />
             </div>
           </div>
-        </div>
-      </div>
     </>
   );
 };
