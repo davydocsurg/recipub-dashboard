@@ -17,6 +17,7 @@ const UI = () => {
                 <div className="row mt-5">
                     <div className="col-lg-4 col-md-6 col-sm-12">
                         <div className="card card-body">
+                            <h5 className="">Input</h5>
                             <Input
                                 id="name"
                                 labelFor="Name"
@@ -31,12 +32,14 @@ const UI = () => {
 
                     <div className="col-lg-4 col-md-6 col-sm-12">
                         <div className="card card-body">
+                            <h5 className="">Button</h5>
                             <Button text="Login" style={"btn-primary btn-lg"} />
                         </div>
                     </div>
 
                     <div className="col-lg-4 col-md-6 col-sm-12">
                         <div className="card card-body">
+                            <h5 className="">Select Input</h5>
                             <SelectInput
                                 id="Gender"
                                 labelFor="Gender"

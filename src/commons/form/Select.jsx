@@ -36,7 +36,7 @@ const SelectInput = ({
                         required={required}
                         name={name}
                         error={error}
-                        className={style}
+                        className={"form-control " + style}
                     >
                         {options.map((opt, i) => (
                             <option key={i} onChange={updateValue}>
