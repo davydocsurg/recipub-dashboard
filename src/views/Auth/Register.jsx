@@ -1,6 +1,19 @@
 import React from "react";
+import Label from "../../commons/form/Label";
+import Input from "../../commons/form/Input";
 
-const Register = () => {
+const Register = ({
+  labelFor,
+  type,
+  placeholder,
+  style,
+  value,
+  disabled,
+  required,
+  name,
+  id,
+  error,
+}) => {
   return (
     <>
       <section className="vh-100">
@@ -8,119 +21,101 @@ const Register = () => {
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="">
               <div className="card text-black" style={{ borderRadius: "8px " }}>
-                <div className="card-body p-md-1">
+                <div className="card-body p-md-4">
                   <div className="row justify-content-center">
                     <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                       <p className="text-center h1 fw-bold mb-1 mx-1 mx-md-2 mt-4">
-                        Buyer's Register
+                        Register
                       </p>
 
                       <form className="mx-1 mx-md-1">
                         <div className="d-flex flex-row align-items-center mb-1">
                           <div className="form-outline flex-fill mb-0">
-                            <input
+                            <Input
                               type="text"
                               id="first_name"
-                              className="form-control"
-                              required
+                              required={true}
+                              labelFor={"First Name"}
+                              name={"first_name"}
                             />
-                            <label className="form-label " htmlFor="first_name">
-                              First Name*
-                            </label>
                           </div>
                         </div>
 
                         <div className="d-flex flex-row align-items-center mb-1">
                           <div className="form-outline flex-fill mb-0">
-                            <input
+                            <Input
                               type="text"
                               id="last_name"
-                              className="form-control"
-                              required
+                              required={true}
+                              labelFor={"Last Name"}
+                              name={"last_name"}
                             />
-                            <label className="form-label" htmlFor="last_name">
-                              Last Name*
-                            </label>
                           </div>
                         </div>
 
                         <div className="d-flex flex-row align-items-center mb-1">
                           <div className="form-outline flex-fill mb-0">
-                            <input
-                              type="email"
+                            <Input
+                              type="text"
                               id="email"
-                              className="form-control"
-                              required
+                              required={true}
+                              labelFor={"Email"}
+                              name={"email"}
                             />
-                            <label className="form-label" htmlFor="email">
-                              Your Email*
-                            </label>
                           </div>
                         </div>
 
                         <div className="d-flex flex-row align-items-center mb-1">
                           <div className="form-outline flex-fill mb-0">
-                            <input
+                            <Input
                               type="password"
                               id="password"
-                              className="form-control"
-                              required
+                              required={true}
+                              labelFor={"password"}
+                              name={"password"}
                             />
-                            <label
-                              className="form-label"
-                              htmlFor="form3Example4c"
-                            >
-                              Password*
-                            </label>
                           </div>
                         </div>
 
                         <div className="d-flex flex-row align-items-center mb-1">
                           <div className="form-outline flex-fill mb-0">
-                            <input
+                            <Input
                               type="password"
-                              id="password"
-                              className="form-control"
-                              required
+                              id="password_confirmation"
+                              required={true}
+                              labelFor={"Confirm Password"}
+                              name={"password_confirmation"}
                             />
-                            <label className="password" htmlFor="password">
-                              Repeat your password*
-                            </label>
                           </div>
                         </div>
 
                         <div className="d-flex flex-row align-items-center mb-1">
                           <div className="form-outline flex-fill mb-0">
-                            <input
+                            <Input
                               type="tel"
-                              id="phone_number"
-                              className="form-control"
-                              required
+                              id="phone"
+                              required={true}
+                              labelFor={"Phone Number"}
+                              name={"phone"}
                             />
-                            <label
-                              className="form-label"
-                              htmlFor="phone_number"
-                            >
-                              Phone Number*
-                            </label>
                           </div>
                         </div>
 
-                        <div className="form-check d-flex justify-content-center mb-1">
+                        <div className="d-flex justify-left mb-1">
                           <input
-                            className="form-check-input me-2"
+                            // className="form-check-input me-2"
                             type="checkbox"
                             value=""
                             id="confirm"
-                            required
+                            required={true}
                           />
-                          <label className="form-check-label" htmlFor="confirm">
+                          <label htmlFor="confirm">
                             I agree all statements in{" "}
                             <a href="#!">Terms of service</a>
                           </label>
                         </div>
 
-                        <div className="d-flex justify-left mx-4 mb-1 mb-lg-4">
+                        <div className="d-flex justify-left mb-1">
                           <button
                             type="submit"
                             className="btn btn-primary btn-lg"
