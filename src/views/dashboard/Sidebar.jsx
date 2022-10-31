@@ -40,32 +40,26 @@ export default function Sidebar() {
               role="menu"
               data-accordion="false"
             >
-              {/* Add icons to the links using the .nav-icon class
-           with font-awesome or any other icon font library */}
               <li className="nav-item has-treeview menu-open">
                 <a href="#" className="nav-link active">
                   <i className="nav-icon fas fa-tachometer-alt" />
-                  <p>
-                    Overview
-                    <i className="right fas fa-angle-left" />
-                  </p>
+                  <p>Overview</p>
                 </a>
               </li>
               <li className="nav-item">
                 <a href="pages/widgets.html" className="nav-link">
                   <i className="nav-icon fas fa-th" />
                   <p>
-                    Dashboard
+                    Analytics
                     <span className="right badge badge-danger">New</span>
                   </p>
                 </a>
               </li>
               <li className="nav-item has-treeview">
                 <a href="#" className="nav-link">
-                  <i className="nav-icon fas fa-copy" />
+                  <i className="nav-icon fas fa-inbox" />
                   <p>
-                    Layout Options
-                    <i className="fas fa-angle-left right" />
+                    Inbox
                     <span className="badge badge-info right">6</span>
                   </p>
                 </a>
@@ -123,10 +117,7 @@ export default function Sidebar() {
               <li className="nav-item has-treeview">
                 <a href="#" className="nav-link">
                   <i className="nav-icon fas fa-chart-pie" />
-                  <p>
-                    sales Charts
-                    <i className="right fas fa-angle-left" />
-                  </p>
+                  <p>sales Charts</p>
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
@@ -151,17 +142,14 @@ export default function Sidebar() {
               </li>
               <li className="nav-item has-treeview">
                 <a href="#" className="nav-link">
-                  <i className="nav-icon fas fa-tree" />
-                  <p>
-                    UI Elements
-                    <i className="fas fa-angle-left right" />
-                  </p>
+                  <i className="nav-icon fas fa-solid fa-users" />
+                  <p>View Users</p>
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
                     <a href="pages/UI/general.html" className="nav-link">
-                      <i className="far fa-circle nav-icon" />
-                      <p>General</p>
+                      <i className="fas fa-user-vneck nav-icon" />
+                      <p>Profile</p>
                     </a>
                   </li>
                   <li className="nav-item">
@@ -211,10 +199,7 @@ export default function Sidebar() {
               <li className="nav-item has-treeview">
                 <a href="#" className="nav-link">
                   <i className="nav-icon fas fa-edit" />
-                  <p>
-                    Forms
-                    <i className="fas fa-angle-left right" />
-                  </p>
+                  <p>Forms</p>
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
@@ -240,10 +225,7 @@ export default function Sidebar() {
               <li className="nav-item has-treeview">
                 <a href="#" className="nav-link">
                   <i className="nav-icon fas fa-table" />
-                  <p>
-                    Tables
-                    <i className="fas fa-angle-left right" />
-                  </p>
+                  <p>Tables</p>
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
@@ -270,10 +252,7 @@ export default function Sidebar() {
               <li className="nav-item has-treeview">
                 <a href="#" className="nav-link">
                   <i className="nav-icon fas fa-book" />
-                  <p>
-                    Pages
-                    <i className="fas fa-angle-left right" />
-                  </p>
+                  <p>Pages</p>
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
@@ -341,10 +320,7 @@ export default function Sidebar() {
               <li className="nav-item has-treeview">
                 <a href="#" className="nav-link">
                   <i className="nav-icon far fa-plus-square" />
-                  <p>
-                    Extras
-                    <i className="fas fa-angle-left right" />
-                  </p>
+                  <p>Extras</p>
                 </a>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
