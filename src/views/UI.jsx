@@ -63,7 +63,7 @@ const UI = () => {
                 type=""
                 placeholder="Default Parameter"
                 style=""
-                error={"Content must not be greater than 250 characters"}
+                error={"Content must not be greater than 250 characters."}
                 name="content"
                 id=""
                 disabled={false}
